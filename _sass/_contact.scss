@@ -1,0 +1,104 @@
+.contact-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba($primary, 0.05);
+    border-radius: 12px;
+    text-decoration: none;
+    color: $text-primary;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: rgba($primary, 0.1);
+        transform: translateX(8px);
+        text-decoration: none;
+    }
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    background: $gradient;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    svg {
+        width: 24px;
+        height: 24px;
+        fill: white;
+    }
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-label {
+    font-size: 0.8rem;
+    color: $text-secondary;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.contact-value {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $text-primary;
+}
+
+.contact-arrow {
+    color: $text-secondary;
+    transition: transform 0.3s ease;
+
+    .contact-item:hover & {
+        transform: translateX(4px);
+        color: $primary;
+    }
+}
+
+// Social links
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    width: 48px;
+    height: 48px;
+    background: $bg-card;
+    border: 1px solid $border;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: $primary;
+        border-color: $primary;
+        transform: translateY(-4px);
+    }
+
+    svg {
+        width: 22px;
+        height: 22px;
+        fill: $text-secondary;
+        transition: fill 0.3s ease;
+    }
+
+    &:hover svg {
+        fill: white;
+    }
+}

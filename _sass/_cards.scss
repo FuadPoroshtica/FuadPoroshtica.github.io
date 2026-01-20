@@ -1,0 +1,60 @@
+main {
+    padding: 2rem 0;
+}
+
+.card {
+    background: $bg-card;
+    border: 1px solid $border;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.card-title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $primary;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: $text-secondary;
+    line-height: 1.8;
+
+    strong {
+        color: $text-primary;
+    }
+}
+
+// Skills
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skill-tag {
+    background: rgba($primary, 0.1);
+    border: 1px solid rgba($primary, 0.2);
+    color: $text-primary;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: rgba($primary, 0.2);
+        border-color: $primary;
+        transform: scale(1.05);
+    }
+}
