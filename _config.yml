@@ -1,0 +1,53 @@
+# Site settings
+title: Fuad Poroshtica
+description: Software Developer & Technology Enthusiast
+url: "https://fuadp.dev"
+baseurl: ""
+
+# Author info
+author:
+  name: Fuad Poroshtica
+  email: connect@fuadp.dev
+  github: FuadPoroshtica
+  tagline: Software Developer & Technology Enthusiast
+  bio: >
+    Hello! I'm Fuad, a passionate developer who loves turning ideas into reality through code.
+    I'm driven by curiosity and the endless possibilities of technology. Whether it's building
+    web applications, exploring new frameworks, or solving complex problems, I'm always eager to learn
+    and grow. I believe in writing clean, efficient code and creating meaningful digital experiences.
+
+# Skills list
+skills:
+  - JavaScript
+  - TypeScript
+  - React
+  - Node.js
+  - Python
+  - Git
+  - Web Development
+  - Problem Solving
+
+# Social links
+social:
+  github: https://github.com/FuadPoroshtica
+  email: connect@fuadp.dev
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Sass settings
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

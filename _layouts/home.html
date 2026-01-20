@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<header class="fade-in">
+    {% include avatar.html %}
+    <h1>{{ site.author.name }}</h1>
+    <p class="tagline">{{ site.author.tagline }}</p>
+    <div class="location">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        Building the future, one line at a time
+    </div>
+</header>
+
+<main>
+    <section class="card fade-in">
+        <h2 class="card-title">About Me</h2>
+        <p class="about-text">
+            {{ site.author.bio }}
+        </p>
+    </section>
+
+    <section class="card fade-in">
+        <h2 class="card-title">What I Work With</h2>
+        <div class="skills-grid">
+            {% for skill in site.skills %}
+            <span class="skill-tag">{{ skill }}</span>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="card fade-in">
+        <h2 class="card-title">Get In Touch</h2>
+        <div class="contact-grid">
+            {% include contact-item.html type="email" %}
+            {% include contact-item.html type="github" %}
+        </div>
+    </section>
+</main>
